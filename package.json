@@ -1,0 +1,45 @@
+{
+  "name": "whisper-flow",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "server": "tsx watch server/index.ts",
+    "server:start": "tsx server/index.ts",
+    "check": "tsx server/check.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@tauri-apps/api": "^2.1.1",
+    "@tauri-apps/plugin-global-shortcut": "^2.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "onnxruntime-node": "^1.23.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "faster-whisper-ts@1.2.1": true,
+    "koffi@2.16.3": true,
+    "onnxruntime-node@1.30.0": true,
+    "onnxruntime-node@1.23.0": true,
+    "protobufjs@7.6.6": true,
+    "esbuild@0.28.2": true
+  }
+}
